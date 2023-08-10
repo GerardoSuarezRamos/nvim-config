@@ -15,6 +15,7 @@ ts.setup {
     "markdown_inline",
     "tsx",
     "typescript",
+    "javascript",
     "toml",
     "php",
     "json",
@@ -22,7 +23,17 @@ ts.setup {
     "css",
     "html",
     "lua",
-    "go"
+    "go",
+    "c",
+    "cpp",
+    "dockerfile",
+    "elixir",
+    "regex",
+    "rust",
+    "ruby",
+    "vue",
+    "zig",
+    "yaml"
   },
   autotag = {
     enable = true,
