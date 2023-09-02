@@ -18,7 +18,6 @@ onedark.setup({
     nvim_dap = true,
     nvim_dap_ui = true,
     nvim_lsp = true,
-    nvim_notify = true,
     nvim_tree = true,
     packer = true,
     telescope = true,
