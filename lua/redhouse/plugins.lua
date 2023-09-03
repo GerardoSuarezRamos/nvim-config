@@ -46,7 +46,6 @@ packer.startup(function(use)
 
   use { "akinsho/toggleterm.nvim", tag = '*' } -- terminal
   -- experimental interface cmd
-  -- experimental interface cmd
   use({
     "folke/noice.nvim",
     config = function()
@@ -100,6 +99,10 @@ packer.startup(function(use)
       "kyazdani42/nvim-web-devicons", -- optional, for file icons
     },
   })
+
+  -- golang
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua'
 
   -- git
   use 'lewis6991/gitsigns.nvim'
