@@ -28,3 +28,8 @@ noice.setup({
     input = {}
   }
 })
+
+
+require('notify').setup({
+  background_colour = "#000000"
+})

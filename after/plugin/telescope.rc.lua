@@ -37,6 +37,9 @@ telescope.setup {
         },
       },
     },
+    ["ui-select"] = {
+      require 'telescope.themes'.get_dropdown()
+    },
   },
 }
 
@@ -64,6 +67,10 @@ end)
 vim.keymap.set('n', ';e', function()
   builtin.diagnostics()
 end)
+vim.keymap.set('n', ';g', function()
+  builtin.git_branches()
+end)
+
 vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
