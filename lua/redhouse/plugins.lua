@@ -28,6 +28,15 @@ packer.startup(function(use)
   }
   use 'kyazdani42/nvim-web-devicons' -- File icons
 
+  -- dashboard
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function()
+      require 'alpha'.setup(require 'alpha.themes.startify'.config)
+    end
+  }
+
   -- telescope
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'

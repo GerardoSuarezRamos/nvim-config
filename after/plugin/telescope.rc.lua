@@ -42,8 +42,9 @@ telescope.setup {
     },
   },
 }
-
+-- extensions
 telescope.load_extension("file_browser")
+telescope.load_extension("ui-select")
 
 vim.keymap.set('n', ';f',
   function()
