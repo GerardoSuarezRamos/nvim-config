@@ -1,4 +1,9 @@
-require 'go'.setup({
+local status, go = pcall(require, 'go')
+if (not status) then
+  return
+end
+
+go.setup({
   goimport = 'gopls', -- if set to 'gopls' will use golsp format
   gofmt = 'gopls',    -- if set to gopls will use golsp format
   max_line_line = 120,
