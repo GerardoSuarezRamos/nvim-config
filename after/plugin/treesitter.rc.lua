@@ -33,7 +33,8 @@ ts.setup {
     "ruby",
     "vue",
     "zig",
-    "yaml"
+    "yaml",
+    "proto"
   },
   autotag = {
     enable = true,

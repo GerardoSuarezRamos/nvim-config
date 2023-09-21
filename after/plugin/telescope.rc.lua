@@ -2,6 +2,7 @@ local status, telescope = pcall(require, "telescope")
 if (not status) then return end
 local actions = require('telescope.actions')
 local builtin = require("telescope.builtin")
+local trouble = require("trouble.providers.telescope")
 
 local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
@@ -26,6 +27,7 @@ telescope.setup {
         -- your custom insert mode mappings
         ["i"] = {
           ["<C-w>"] = function() vim.cmd('normal vbd') end,
+          ["<c-t>"] = trouble.open_with_trouble
         },
         ["n"] = {
           -- your custom normal mode mappings
@@ -33,7 +35,8 @@ telescope.setup {
           ["h"] = fb_actions.goto_parent_dir,
           ["/"] = function()
             vim.cmd('startinsert')
-          end
+          end,
+          ["<c-t>"] = trouble.open_with_trouble
         },
       },
     },

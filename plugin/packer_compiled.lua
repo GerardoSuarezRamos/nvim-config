@@ -261,6 +261,11 @@ _G.packer_plugins = {
     path = "/home/redhouse/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/redhouse/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
+  },
   ["zen-mode.nvim"] = {
     loaded = true,
     path = "/home/redhouse/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",

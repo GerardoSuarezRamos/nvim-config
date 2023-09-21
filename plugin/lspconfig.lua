@@ -127,6 +127,12 @@ nvim_lsp.solargraph.setup {
   }
 }
 
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  cmd = { "gopls", "--stdio" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,

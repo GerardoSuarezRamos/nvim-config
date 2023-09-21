@@ -28,6 +28,10 @@ packer.startup(function(use)
   }
   use 'kyazdani42/nvim-web-devicons' -- File icons
 
+  use {
+    'folke/trouble.nvim',
+    require = { 'nvim-tree/nvim-web-devicons' }
+  }
   -- dashboard
   use {
     'goolord/alpha-nvim',
