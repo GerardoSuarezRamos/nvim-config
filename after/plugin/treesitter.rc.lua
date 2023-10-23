@@ -34,7 +34,8 @@ ts.setup {
     "vue",
     "zig",
     "yaml",
-    "proto"
+    "proto",
+    "java"
   },
   autotag = {
     enable = true,
